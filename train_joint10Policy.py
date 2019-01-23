@@ -28,6 +28,17 @@ path = '/home/leh/Preprocessing/Progressive_Training/'
 
 #activeRole = 'lcm'
 activeRole = ['lcm','lcb', 'lb' , 'lw', 'lf', 'rcm', 'rcb', 'rb', 'rw', 'rf']
+# lcm: left defensive midfield; 
+# lcb: left center back
+# lb: left back
+# lw: left wing
+# lf: left forward
+# rcm: right center midfield
+# rcb right center back
+# rb: right back
+# rw: right midfield
+# rf: right forward
+ 
 #activeRole = ['lcm','lcb']
 #activeRole = ['lcb', 'lcm']
 model_list = [path+'weights_progressive_Double_FullBatch_rollsteps_10_'+role+'.h5' for role in activeRole]
