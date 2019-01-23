@@ -38,13 +38,14 @@ activeRole = ['lcm','lcb', 'lb' , 'lw', 'lf', 'rcm', 'rcb', 'rb', 'rw', 'rf']
 # rb: right back
 # rw: right midfield
 # rf: right forward
- 
+
 #activeRole = ['lcm','lcb']
 #activeRole = ['lcb', 'lcm']
 model_list = [path+'weights_progressive_Double_FullBatch_rollsteps_10_'+role+'.h5' for role in activeRole]
 
 roleOrderDefense = ['gk','rb','rcb','lcb','lb','rw','rcm','lcm','lw','rf','lf']
 roleOrderAttack = ['gk','rb','rcb','lcb','lb','rw','rcm','lcm','lw','rf','lf']
+# gk: goalkeeper
 
 global roleOrderList
 roleOrderList = [roleOrderDefense.index(role) for role in activeRole]
